@@ -21,13 +21,19 @@ require_once __DIR__ . '/includes/navbar.php';
                     <p class="about-cover-lead">
                         L&rsquo;Institut des Constructeurs et des Promoteurs r&eacute;unit les professionnels qui veulent comprendre les mutations du secteur, d&eacute;cider avec justesse et transformer les enjeux en opportunit&eacute;s.
                     </p>
-                    <a class="about-text-link" href="#vocation">
-                        D&eacute;couvrir notre vocation <span aria-hidden="true">&#8595;</span>
-                    </a>
+                    <div class="about-cover-actions">
+                        <a class="about-text-link" href="#vocation">
+                            D&eacute;couvrir notre vocation <span aria-hidden="true">&#8595;</span>
+                        </a>
+                        <p class="about-cover-note">Ind&eacute;pendance <span aria-hidden="true">&middot;</span> Expertise <span aria-hidden="true">&middot;</span> Transmission</p>
+                    </div>
                 </div>
 
                 <figure class="about-cover-figure">
-                    <img src="<?php echo $base_url; ?>/assets/img/home/salle_de_reunion.webp" alt="Des professionnels r&eacute;unis autour d&rsquo;une table de travail">
+                    <div class="about-cover-image-shell">
+                        <span class="about-cover-index" aria-hidden="true">01 / 06</span>
+                        <img src="<?php echo $base_url; ?>/assets/img/home/salle_de_reunion.webp" alt="Des professionnels r&eacute;unis autour d&rsquo;une table de travail">
+                    </div>
                     <figcaption>Une communaut&eacute; engag&eacute;e, des &eacute;changes utiles, des d&eacute;cisions mieux inform&eacute;es.</figcaption>
                 </figure>
             </div>
