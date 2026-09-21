@@ -9,6 +9,11 @@ if (!isset($page_description)) {
 $request_uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 $is_home = ($request_uri === '' || $request_uri === 'index' || $request_uri === 'index.php');
 $body_class = (!$is_home) ? 'light-header' : '';
+
+// Base URL dynamique — fonctionne en local et en production
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'];
+$base_url = $protocol . '://' . $host;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,8 +26,8 @@ $body_class = (!$is_home) ? 'light-header' : '';
     <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/Favicon.png">
-    <link rel="apple-touch-icon" href="assets/img/Favicon.png">
+    <link rel="icon" type="image/png" href="<?php echo $base_url; ?>/assets/img/Favicon.png">
+    <link rel="apple-touch-icon" href="<?php echo $base_url; ?>/assets/img/Favicon.png">
 
     <!-- Open Graph / Meta Social -->
     <meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>">
@@ -30,9 +35,9 @@ $body_class = (!$is_home) ? 'light-header' : '';
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="assets/css/fonts.css?v=1.0.2">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/fonts.css?v=1.0.2">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="assets/css/main.css?v=1.0.2">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/main.css?v=1.0.2">
 </head>
 <body class="<?php echo $body_class; ?>">

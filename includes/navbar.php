@@ -11,24 +11,24 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
 <header class="site-header">
     <div class="navbar-container">
         <!-- Logo Image -->
-        <a href="index.php" class="navbar-logo" aria-label="Accueil Institut CP">
-            <img src="assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img">
+        <a href="<?php echo $base_url; ?>/" class="navbar-logo" aria-label="Accueil Institut CP">
+            <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img">
         </a>
 
         <!-- Navigation Links -->
         <ul class="navbar-nav">
             <li>
-                <a href="index.php" class="nav-link <?php echo ($active_slug === 'accueil') ? 'active' : ''; ?>">
+                <a href="<?php echo $base_url; ?>/" class="nav-link <?php echo ($active_slug === 'accueil') ? 'active' : ''; ?>">
                     Accueil
                 </a>
             </li>
             <li>
-                <a href="a-propos" class="nav-link <?php echo ($active_slug === 'a-propos') ? 'active' : ''; ?>">
+                <a href="<?php echo $base_url; ?>/a-propos" class="nav-link <?php echo ($active_slug === 'a-propos') ? 'active' : ''; ?>">
                     L'institut
                 </a>
             </li>
             <li>
-                <a href="espace-membres" class="btn-member">
+                <a href="<?php echo $base_url; ?>/espace-membres" class="btn-member">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                     </svg>
