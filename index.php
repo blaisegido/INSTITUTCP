@@ -228,7 +228,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <!-- Slide 1: Le marché de la construction neuve -->
                     <div class="nextgen-card">
                         <div class="nextgen-card-bg">
-                            <img src="assets/img/home/carrousel_1.jpg" alt="Le marché de la construction neuve">
+                            <img src="assets/img/home/carrousel_1.jpg" alt="Le marché de la construction neuve" loading="lazy">
                         </div>
                         <div class="nextgen-card-overlay"></div>
                         <div class="nextgen-card-body">
@@ -254,7 +254,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <!-- Slide 2: Les mesures phares de la loi ELAN -->
                     <div class="nextgen-card">
                         <div class="nextgen-card-bg">
-                            <img src="assets/img/home/carrousel_2.jpg" alt="Les mesures phares de la loi ELAN">
+                            <img src="assets/img/home/carrousel_2.jpg" alt="Les mesures phares de la loi ELAN" loading="lazy">
                         </div>
                         <div class="nextgen-card-overlay"></div>
                         <div class="nextgen-card-body">
@@ -280,7 +280,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <!-- Slide 3: LE BAROMÈTRE DE L'IMMOBILIER NEUF -->
                     <div class="nextgen-card">
                         <div class="nextgen-card-bg">
-                            <img src="assets/img/home/carrousel_3.jpg" alt="LE BAROMÈTRE DE L'IMMOBILIER NEUF">
+                            <img src="assets/img/home/carrousel_3.jpg" alt="LE BAROMÈTRE DE L'IMMOBILIER NEUF" loading="lazy">
                         </div>
                         <div class="nextgen-card-overlay"></div>
                         <div class="nextgen-card-body">
@@ -351,7 +351,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 1: Livres publiés -->
             <article class="pub-encart">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_livres.png" alt="Livres publiés" class="pub-encart-img">
+                    <img src="assets/img/home/pub_livres.png" alt="Livres publiés" class="pub-encart-img" loading="lazy">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">01</span>
                 </div>
@@ -369,7 +369,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 2: Fiches d'infos pro -->
             <article class="pub-encart">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_fiches.png" alt="Fiches d'infos pro" class="pub-encart-img">
+                    <img src="assets/img/home/pub_fiches.png" alt="Fiches d'infos pro" class="pub-encart-img" loading="lazy">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">02</span>
                 </div>
@@ -387,7 +387,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 3: Guide Solutions Habitat -->
             <article class="pub-encart">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_guide.png" alt="Guide Solutions Habitat" class="pub-encart-img">
+                    <img src="assets/img/home/pub_guide.png" alt="Guide Solutions Habitat" class="pub-encart-img" loading="lazy">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">03</span>
                 </div>
@@ -405,7 +405,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 4: Presse -->
             <article class="pub-encart pub-encart--dark">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_presse.png" alt="Presse" class="pub-encart-img">
+                    <img src="assets/img/home/pub_presse.png" alt="Presse" class="pub-encart-img" loading="lazy">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">04</span>
                 </div>

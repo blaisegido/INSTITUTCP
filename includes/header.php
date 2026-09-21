@@ -30,9 +30,9 @@ $body_class = (!$is_home) ? 'light-header' : '';
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="assets/css/fonts.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/fonts.css?v=1.0.1">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="assets/css/main.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/main.css?v=1.0.1">
 </head>
 <body class="<?php echo $body_class; ?>">
