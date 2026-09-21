@@ -4,14 +4,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_page === 'linstitut.php') {
     $active_slug = 'a-propos';
-} elseif ($current_uri === 'services' || $current_page === 'services.php') {
-    $active_slug = 'services';
-} elseif ($current_uri === 'formations' || $current_page === 'formations.php') {
-    $active_slug = 'formations';
-} elseif ($current_uri === 'international' || $current_page === 'international.php') {
-    $active_slug = 'international';
-} elseif ($current_uri === 'espace-membres' || $current_page === 'espace-membres.php') {
-    $active_slug = 'espace-membres';
 } else {
     $active_slug = 'accueil';
 }
@@ -26,23 +18,13 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
         <!-- Navigation Links -->
         <ul class="navbar-nav">
             <li>
+                <a href="index.php" class="nav-link <?php echo ($active_slug === 'accueil') ? 'active' : ''; ?>">
+                    Accueil
+                </a>
+            </li>
+            <li>
                 <a href="a-propos" class="nav-link <?php echo ($active_slug === 'a-propos') ? 'active' : ''; ?>">
                     L'institut
-                </a>
-            </li>
-            <li>
-                <a href="services" class="nav-link <?php echo ($active_slug === 'services') ? 'active' : ''; ?>">
-                    Services
-                </a>
-            </li>
-            <li>
-                <a href="formations" class="nav-link <?php echo ($active_slug === 'formations') ? 'active' : ''; ?>">
-                    Formations
-                </a>
-            </li>
-            <li>
-                <a href="international" class="nav-link <?php echo ($active_slug === 'international') ? 'active' : ''; ?>">
-                    International
                 </a>
             </li>
             <li>
@@ -52,6 +34,31 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
                     </svg>
                     Espace membres
                 </a>
+            </li>
+            <li class="lang-switcher-li">
+                <div class="lang-switcher">
+                    <button type="button" class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Choisir la langue">
+                        <span class="lang-flag" id="currentLangFlag">🇫🇷</span>
+                        <span class="lang-code" id="currentLangCode">FR</span>
+                        <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button type="button" class="lang-item active" data-lang="fr" data-flag="🇫🇷" data-code="FR">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span>Français</span>
+                        </button>
+                        <button type="button" class="lang-item" data-lang="en" data-flag="🇬🇧" data-code="EN">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span>English</span>
+                        </button>
+                        <button type="button" class="lang-item" data-lang="zh-CN" data-flag="🇨🇳" data-code="ZH">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span>中文</span>
+                        </button>
+                    </div>
+                </div>
             </li>
         </ul>
 
@@ -63,3 +70,4 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
         </button>
     </div>
 </header>
+<div id="google_translate_element" style="display:none;"></div>

@@ -51,6 +51,6 @@
 </footer>
 
 <!-- Main JavaScript -->
-<script src="assets/js/main.js?v=1.0.1"></script>
+<script src="assets/js/main.js?v=1.0.2"></script>
 </body>
 </html>
