@@ -1,0 +1,29 @@
+name: 🚀 Déploiement FTP → institutcp.riseseason.com
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Déploiement via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: 📤 Déployer sur LWS via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .env
+            .env.*
