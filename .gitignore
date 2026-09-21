@@ -1,0 +1,43 @@
+# =========================
+# Système et éditeurs
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# PHP
+# =========================
+/vendor/
+composer.lock
+*.log
+*.cache
+
+# =========================
+# Environnement / Config sensible
+# =========================
+.env
+.env.local
+.env.*.local
+config.local.php
+*.sql
+
+# =========================
+# Dépendances Node (si utilisé)
+# =========================
+node_modules/
+package-lock.json
+
+# =========================
+# OS / Temp
+# =========================
+*.tmp
+*.bak
+*.orig

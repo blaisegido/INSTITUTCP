@@ -1,0 +1,45 @@
+/* Google Fonts - DM Sans & Cinzel (Logo Branding Font) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Gotham Font Configuration (Local / Fallback System Stack) */
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Bold'), local('Gotham-Bold'), url('../fonts/Gotham-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Medium'), local('Gotham-Medium'), url('../fonts/Gotham-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Book'), local('Gotham-Book'), url('../fonts/Gotham-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Fallback font rule for Gotham titles */
+h1, h2, h3, h4, h5, h6, .font-gotham {
+    font-family: 'Gotham', 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+/* Logo Typography Font - Cinzel */
+.font-logo, .logo-text {
+    font-family: 'Cinzel', 'Trajan Pro', 'Georgia', serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Body and standard content font */
+body, p, span, a, input, button, select, textarea, .font-dmsans {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

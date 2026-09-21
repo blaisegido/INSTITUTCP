@@ -1,0 +1,14 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+# Map a-propos to a-propos.php
+RewriteRule ^a-propos$ a-propos.php [NC,L]
+RewriteRule ^linstitut$ a-propos.php [NC,L]
+
+# Auto map extensionless URLs to PHP files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [NC,L]
