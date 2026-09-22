@@ -4396,10 +4396,10 @@ body {
 .about-founder-portrait::before {
     background: var(--about-blue-pale);
     content: '';
-    height: calc(100% - 2rem);
+    height: calc(100% - 5.75rem);
     left: -1.25rem;
     position: absolute;
-    top: 1.25rem;
+    top: 2rem;
     width: 75%;
     z-index: 0;
 }
