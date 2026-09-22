@@ -4,6 +4,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_page === 'linstitut.php') {
     $active_slug = 'a-propos';
+} elseif ($current_uri === 'services' || $current_page === 'services.php') {
+    $active_slug = 'services';
+} elseif ($current_uri === 'formations' || $current_page === 'formations.php') {
+    $active_slug = 'formations';
 } else {
     $active_slug = 'accueil';
 }
@@ -25,6 +29,16 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
             <li>
                 <a href="<?php echo $base_url; ?>/a-propos" class="nav-link <?php echo ($active_slug === 'a-propos') ? 'active' : ''; ?>">
                     L'institut
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $base_url; ?>/services" class="nav-link <?php echo ($active_slug === 'services') ? 'active' : ''; ?>">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $base_url; ?>/formations" class="nav-link <?php echo ($active_slug === 'formations') ? 'active' : ''; ?>">
+                    Formations
                 </a>
             </li>
             <li>

@@ -11,7 +11,48 @@ document.addEventListener('DOMContentLoaded', () => {
     initNextGenCarousel();
     initTestimonialsCarousel();
     initLanguageSwitcher();
+    initPdfPreview();
 });
+
+function initPdfPreview() {
+    const modal = document.getElementById('pdfPreviewModal');
+    const frame = modal?.querySelector('.pdf-preview-frame');
+    const title = modal?.querySelector('#pdfPreviewTitle');
+    const download = modal?.querySelector('.pdf-preview-footer a');
+    const previewButtons = document.querySelectorAll('[data-pdf-preview]');
+
+    if (!modal || !frame || !title || !download || !previewButtons.length) return;
+
+    let lastTrigger = null;
+
+    const closeModal = () => {
+        modal.hidden = true;
+        document.body.classList.remove('pdf-preview-open');
+        frame.src = '';
+        lastTrigger?.focus();
+    };
+
+    previewButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            lastTrigger = button;
+            const pdfUrl = button.dataset.pdfPreview;
+            title.textContent = button.dataset.pdfTitle || 'Aperçu PDF';
+            frame.src = `${pdfUrl}#toolbar=0&navpanes=0&view=FitH`;
+            download.href = pdfUrl;
+            modal.hidden = false;
+            document.body.classList.add('pdf-preview-open');
+            modal.querySelector('.pdf-preview-close').focus();
+        });
+    });
+
+    modal.querySelectorAll('[data-pdf-close]').forEach((element) => {
+        element.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !modal.hidden) closeModal();
+    });
+}
 
 /**
  * Handle sticky header scroll state
