@@ -181,7 +181,7 @@ require_once __DIR__ . '/includes/navbar.php';
     <section class="about-founder" id="gouvernance" aria-labelledby="founder-title">
         <div class="container about-founder-grid">
             <figure class="about-founder-portrait">
-                <img src="<?php echo $base_url; ?>/assets/img/home/olivier_burot.webp" alt="Olivier Burot, fondateur et pr&eacute;sident de l&rsquo;Institut CP">
+                <img src="<?php echo $base_url; ?>/assets/img/home/olivier_burot.webp?v=1.0.1" alt="Olivier Burot, fondateur et pr&eacute;sident de l&rsquo;Institut CP" width="720" height="900" loading="lazy" decoding="async">
                 <figcaption>
                     <strong>Olivier Burot</strong>
                     <span>Fondateur et Pr&eacute;sident</span>
