@@ -38,6 +38,6 @@ $base_url = $protocol . '://' . $host;
     <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/fonts.css?v=1.0.2">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/main.css?v=1.0.5">
 </head>
 <body class="<?php echo $body_class; ?>">

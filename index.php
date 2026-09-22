@@ -221,105 +221,103 @@ require_once __DIR__ . '/includes/navbar.php';
             </p>
         </div>
 
-        <!-- Next-Gen Immersive Luxury Carousel -->
-        <div class="icp-nextgen-carousel reveal-on-scroll">
+        <!-- Editorial resources carousel -->
+        <div class="icp-nextgen-carousel reveal-on-scroll" role="region" aria-roledescription="carrousel" aria-label="Analyses et ressources de l'Institut CP" tabindex="0">
             <div class="nextgen-viewport">
                 <div class="nextgen-track">
                     <!-- Slide 1: Le marché de la construction neuve -->
-                    <div class="nextgen-card">
-                        <div class="nextgen-card-bg">
+                    <article class="nextgen-card" role="group" aria-roledescription="slide" aria-label="1 sur 3">
+                        <div class="nextgen-card-media">
                             <img src="assets/img/home/carrousel_1.webp" alt="Le marché de la construction neuve" loading="lazy">
+                            <div class="nextgen-card-overlay"></div>
+                            <span class="nextgen-number" aria-hidden="true">01 <small>/ 03</small></span>
                         </div>
-                        <div class="nextgen-card-overlay"></div>
                         <div class="nextgen-card-body">
-                            <div class="nextgen-top-meta">
-                                <span class="nextgen-tag">Décryptage &amp; Perspectives</span>
-                                <span class="nextgen-number">01</span>
-                            </div>
+                            <span class="nextgen-tag">Décryptage &amp; Perspectives</span>
                             <div class="nextgen-bottom-content">
                                 <h3 class="nextgen-title">Le marché de la construction neuve</h3>
                                 <p class="nextgen-desc">
                                     État des lieux complet sur la dynamique des ouvertures de chantier, les taux d'intérêt et les perspectives d'investissement dans la construction neuve en France.
                                 </p>
-                                <a href="services.php" class="nextgen-link-btn">
-                                    Explorer l'analyse
-                                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
                             </div>
+                            <a href="services.php" class="nextgen-link-btn">
+                                Explorer l'analyse
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Slide 2: Les mesures phares de la loi ELAN -->
-                    <div class="nextgen-card">
-                        <div class="nextgen-card-bg">
+                    <article class="nextgen-card" role="group" aria-roledescription="slide" aria-label="2 sur 3">
+                        <div class="nextgen-card-media">
                             <img src="assets/img/home/carrousel_2.webp" alt="Les mesures phares de la loi ELAN" loading="lazy">
+                            <div class="nextgen-card-overlay"></div>
+                            <span class="nextgen-number" aria-hidden="true">02 <small>/ 03</small></span>
                         </div>
-                        <div class="nextgen-card-overlay"></div>
                         <div class="nextgen-card-body">
-                            <div class="nextgen-top-meta">
-                                <span class="nextgen-tag">Cadre Réglementaire</span>
-                                <span class="nextgen-number">02</span>
-                            </div>
+                            <span class="nextgen-tag">Cadre réglementaire</span>
                             <div class="nextgen-bottom-content">
                                 <h3 class="nextgen-title">Les mesures phares de la loi ELAN</h3>
                                 <p class="nextgen-desc">
                                     Décryptage approfondi des évolutions législatives, des simplifications administratives et des impacts directs pour la promotion et l'aménagement urbain.
                                 </p>
-                                <a href="linstitut.php" class="nextgen-link-btn">
-                                    Consulter le dossier
-                                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
                             </div>
+                            <a href="linstitut.php" class="nextgen-link-btn">
+                                Consulter le dossier
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Slide 3: LE BAROMÈTRE DE L'IMMOBILIER NEUF -->
-                    <div class="nextgen-card">
-                        <div class="nextgen-card-bg">
+                    <article class="nextgen-card" role="group" aria-roledescription="slide" aria-label="3 sur 3">
+                        <div class="nextgen-card-media">
                             <img src="assets/img/home/carrousel_3.webp" alt="LE BAROMÈTRE DE L'IMMOBILIER NEUF" loading="lazy">
+                            <div class="nextgen-card-overlay"></div>
+                            <span class="nextgen-number" aria-hidden="true">03 <small>/ 03</small></span>
                         </div>
-                        <div class="nextgen-card-overlay"></div>
                         <div class="nextgen-card-body">
-                            <div class="nextgen-top-meta">
-                                <span class="nextgen-tag">Observatoire Exclusif</span>
-                                <span class="nextgen-number">03</span>
-                            </div>
+                            <span class="nextgen-tag">Observatoire exclusif</span>
                             <div class="nextgen-bottom-content">
-                                <h3 class="nextgen-title">LE BAROMÈTRE DE L'IMMOBILIER NEUF</h3>
+                                <h3 class="nextgen-title">Le baromètre de l'immobilier neuf</h3>
                                 <p class="nextgen-desc">
                                     Indicateurs clés trimestriels, suivi des prix du mètre carré, volume de ventes réservées et tendances prospectives par région.
                                 </p>
-                                <a href="formations.php" class="nextgen-link-btn">
-                                    Découvrir le baromètre
-                                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
                             </div>
+                            <a href="formations.php" class="nextgen-link-btn">
+                                Découvrir le baromètre
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
 
-            <!-- Next-Gen Controls Bar with Timeline -->
+            <!-- Carousel controls -->
             <div class="nextgen-controls">
-                <div class="nextgen-timeline-container">
-                    <div class="nextgen-timeline-bar"></div>
+                <div class="nextgen-progress" aria-hidden="true">
+                    <span class="nextgen-current">01</span>
+                    <div class="nextgen-timeline-container">
+                        <div class="nextgen-timeline-bar"></div>
+                    </div>
+                    <span class="nextgen-total">/ 03</span>
                 </div>
 
                 <div class="nextgen-arrows">
-                    <button class="nextgen-arrow-btn nextgen-prev" title="Précédent">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <button class="nextgen-arrow-btn nextgen-prev" type="button" title="Ressource précédente" aria-label="Afficher la ressource précédente">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
 
-                    <button class="nextgen-arrow-btn nextgen-next" title="Suivant">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <button class="nextgen-arrow-btn nextgen-next" type="button" title="Ressource suivante" aria-label="Afficher la ressource suivante">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>

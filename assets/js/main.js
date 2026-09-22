@@ -249,31 +249,42 @@ function initCustomVideoPlayer() {
 }
 
 /**
- * Next-Gen Ultra Modern Carousel Module
+ * Home editorial carousel module
  */
 function initNextGenCarousel() {
+    const carousel = document.querySelector('.icp-nextgen-carousel');
     const track = document.querySelector('.nextgen-track');
     const cards = document.querySelectorAll('.nextgen-card');
     const prevBtn = document.querySelector('.nextgen-prev');
     const nextBtn = document.querySelector('.nextgen-next');
     const timelineBar = document.querySelector('.nextgen-timeline-bar');
+    const currentLabel = document.querySelector('.nextgen-current');
 
-    if (!track || !cards.length) return;
+    if (!carousel || !track || !cards.length) return;
 
     let currentIndex = 0;
     const totalCards = cards.length;
 
     const updateNextGenCarousel = () => {
         const cardWidth = cards[0].getBoundingClientRect().width;
-        const gap = 36; // 2.25rem gap
-        const offset = currentIndex * (cardWidth + gap);
+        const offset = currentIndex * cardWidth;
         track.style.transform = `translateX(-${offset}px)`;
 
-        // Update progress bar width / position
         if (timelineBar) {
-            const stepPercent = (currentIndex / (totalCards - 1)) * 66.666;
             timelineBar.style.transform = `translateX(${currentIndex * 100}%)`;
         }
+
+        if (currentLabel) {
+            currentLabel.textContent = String(currentIndex + 1).padStart(2, '0');
+        }
+
+        cards.forEach((card, index) => {
+            const isCurrent = index === currentIndex;
+            card.setAttribute('aria-hidden', isCurrent ? 'false' : 'true');
+            card.querySelectorAll('a, button').forEach((control) => {
+                control.tabIndex = isCurrent ? 0 : -1;
+            });
+        });
     };
 
     const goToNextGenSlide = (index) => {
@@ -290,7 +301,32 @@ function initNextGenCarousel() {
     if (prevBtn) prevBtn.addEventListener('click', () => goToNextGenSlide(currentIndex - 1));
     if (nextBtn) nextBtn.addEventListener('click', () => goToNextGenSlide(currentIndex + 1));
 
+    carousel.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            goToNextGenSlide(currentIndex - 1);
+        }
+
+        if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            goToNextGenSlide(currentIndex + 1);
+        }
+    });
+
+    let touchStartX = 0;
+
+    carousel.addEventListener('touchstart', (event) => {
+        touchStartX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', (event) => {
+        const distance = event.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(distance) < 45) return;
+        goToNextGenSlide(distance > 0 ? currentIndex - 1 : currentIndex + 1);
+    }, { passive: true });
+
     window.addEventListener('resize', updateNextGenCarousel);
+    updateNextGenCarousel();
 }
 
 /**
@@ -535,4 +571,3 @@ function initLanguageSwitcher() {
     script.async = true;
     document.head.appendChild(script);
 })();
-
