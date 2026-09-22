@@ -267,7 +267,8 @@ function initNextGenCarousel() {
 
     const updateNextGenCarousel = () => {
         const cardWidth = cards[0].getBoundingClientRect().width;
-        const offset = currentIndex * cardWidth;
+        const gap = parseFloat(window.getComputedStyle(track).gap) || 0;
+        const offset = currentIndex * (cardWidth + gap);
         track.style.transform = `translateX(-${offset}px)`;
 
         if (timelineBar) {

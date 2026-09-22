@@ -51,6 +51,6 @@
 </footer>
 
 <!-- Main JavaScript -->
-<script src="<?php echo $base_url; ?>/assets/js/main.js?v=1.0.3"></script>
+<script src="<?php echo $base_url; ?>/assets/js/main.js?v=1.0.4"></script>
 </body>
 </html>
