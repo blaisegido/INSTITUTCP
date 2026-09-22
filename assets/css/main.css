@@ -4416,8 +4416,10 @@ body {
     border-left: 2px solid var(--about-blue);
     display: grid;
     gap: 0.25rem;
-    margin-top: 1.25rem;
+    margin-top: 1.9rem;
     padding-left: 0.85rem;
+    position: relative;
+    z-index: 2;
 }
 
 .about-founder-portrait strong {
