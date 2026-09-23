@@ -30,24 +30,9 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img src="<?php echo $base_url; ?>/assets/img/formations/certification-qualiopi.png" alt="Certification Qualiopi, processus certifi&eacute; par la R&eacute;publique Fran&ccedil;aise" width="317" height="169">
                         <span class="formations-certification-stamp" aria-hidden="true">ICP</span>
                     </div>
-                    <figcaption>Une formation exigeante, ancr&eacute;e dans les r&eacute;alit&eacute;s des m&eacute;tiers.</figcaption>
                 </figure>
             </div>
 
-            <div class="formations-cover-highlights" aria-label="Les engagements de nos formations">
-                <div class="formations-cover-highlight">
-                    <strong>01</strong>
-                    <span>Des experts<br>du terrain</span>
-                </div>
-                <div class="formations-cover-highlight">
-                    <strong>02</strong>
-                    <span>Des formats<br>actionnables</span>
-                </div>
-                <div class="formations-cover-highlight">
-                    <strong>03</strong>
-                    <span>Une certification<br>Qualiopi</span>
-                </div>
-            </div>
         </div>
     </section>
 

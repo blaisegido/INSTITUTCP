@@ -8,6 +8,8 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
     $active_slug = 'services';
 } elseif ($current_uri === 'formations' || $current_page === 'formations.php') {
     $active_slug = 'formations';
+} elseif ($current_uri === 'international' || $current_page === 'international.php') {
+    $active_slug = 'international';
 } else {
     $active_slug = 'accueil';
 }
@@ -39,6 +41,11 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
             <li>
                 <a href="<?php echo $base_url; ?>/formations" class="nav-link <?php echo ($active_slug === 'formations') ? 'active' : ''; ?>">
                     Formations
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $base_url; ?>/international" class="nav-link <?php echo ($active_slug === 'international') ? 'active' : ''; ?>">
+                    ICP International
                 </a>
             </li>
             <li>

@@ -25,7 +25,6 @@ require_once __DIR__ . '/includes/navbar.php';
                         <a class="about-text-link" href="#vocation">
                             D&eacute;couvrir notre vocation <span aria-hidden="true">&#8595;</span>
                         </a>
-                        <p class="about-cover-note">Ind&eacute;pendance <span aria-hidden="true">&middot;</span> Expertise <span aria-hidden="true">&middot;</span> Transmission</p>
                     </div>
                 </div>
 
@@ -33,7 +32,6 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="about-cover-image-shell">
                         <img src="<?php echo $base_url; ?>/assets/img/home/salle_de_reunion.webp" alt="Des professionnels r&eacute;unis autour d&rsquo;une table de travail">
                     </div>
-                    <figcaption>Une communaut&eacute; engag&eacute;e, des &eacute;changes utiles, des d&eacute;cisions mieux inform&eacute;es.</figcaption>
                 </figure>
             </div>
         </div>

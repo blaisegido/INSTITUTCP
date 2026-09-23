@@ -24,7 +24,6 @@ require_once __DIR__ . '/includes/navbar.php';
                         <a class="services-text-link" href="#accompagnements">
                             D&eacute;couvrir les services <span aria-hidden="true">&#8595;</span>
                         </a>
-                        <p class="services-cover-note">Fiabilit&eacute; <span aria-hidden="true">&middot;</span> R&eacute;activit&eacute; <span aria-hidden="true">&middot;</span> Action</p>
                     </div>
                 </div>
 
@@ -37,7 +36,6 @@ require_once __DIR__ . '/includes/navbar.php';
                             <i></i><i></i><i></i><i></i><i></i>
                         </div>
                     </div>
-                    <figcaption>Transformer la complexit&eacute; du secteur en leviers d&rsquo;action.</figcaption>
                 </figure>
             </div>
         </div>
