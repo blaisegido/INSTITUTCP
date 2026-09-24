@@ -4,7 +4,7 @@
         <div class="footer-brand">
             <a href="<?php echo $base_url; ?>/" class="navbar-logo" style="display:inline-flex;">
                 <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img footer-logo-img">
-                <span class="logo-text">INSTITUT <span class="accent">CP</span></span>
+                <span class="logo-text footer-logo-text">Institut <span class="accent">CP</span></span>
             </a>
             <p>Construire plus qu'un réseau. Créer de la valeur à travers des opportunités et expertises d'excellence.</p>
         </div>

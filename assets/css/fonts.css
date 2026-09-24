@@ -39,7 +39,30 @@ h1, h2, h3, h4, h5, h6, .font-gotham {
     text-transform: uppercase;
 }
 
+/* Bikeride Font Configuration */
+@font-face {
+    font-family: 'Bikeride';
+    src: local('Bikeride'), local('Bikeride Regular'), local('Bikeride-Regular'),
+         url('../fonts/Bikeride.woff2') format('woff2'),
+         url('../fonts/Bikeride.woff') format('woff'),
+         url('../fonts/Bikeride.ttf') format('truetype'),
+         url('../fonts/Bikeride.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.footer-logo-text,
+.footer-brand .logo-text,
+.footer-logo-text span,
+.footer-brand .logo-text span,
+.footer-logo-text .accent {
+    font-family: 'Bikeride', sans-serif !important;
+    letter-spacing: 0.03em;
+}
+
 /* Body and standard content font */
 body, p, span, a, input, button, select, textarea, .font-dmsans {
     font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+

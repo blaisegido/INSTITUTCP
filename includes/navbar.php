@@ -16,9 +16,10 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
 ?>
 <header class="site-header">
     <div class="navbar-container">
-        <!-- Logo Image -->
+        <!-- Logo Image and Brand Text -->
         <a href="<?php echo $base_url; ?>/" class="navbar-logo" aria-label="Accueil Institut CP">
             <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img">
+            <span class="logo-text navbar-logo-text">Institut <span class="accent">CP</span></span>
         </a>
 
         <!-- Navigation Links -->
