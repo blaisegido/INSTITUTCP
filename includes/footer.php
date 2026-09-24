@@ -3,8 +3,8 @@
         <!-- Brand Info -->
         <div class="footer-brand">
             <a href="<?php echo $base_url; ?>/" class="navbar-logo" style="display:inline-flex;">
-                <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img footer-logo-img">
-                <span class="logo-text footer-logo-text">Institut <span class="accent">CP</span></span>
+                <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img footer-logo-img notranslate" translate="no">
+                <span class="logo-text footer-logo-text notranslate" translate="no">Institut <span class="accent">CP</span></span>
             </a>
             <p>Construire plus qu'un réseau. Créer de la valeur à travers des opportunités et expertises d'excellence.</p>
         </div>
@@ -51,6 +51,6 @@
 </footer>
 
 <!-- Main JavaScript -->
-<script src="<?php echo $base_url; ?>/assets/js/main.js?v=1.0.4"></script>
+<script src="<?php echo $base_url; ?>/assets/js/main.js?v=1.0.7"></script>
 </body>
 </html>

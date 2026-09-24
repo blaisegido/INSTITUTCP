@@ -18,8 +18,8 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
     <div class="navbar-container">
         <!-- Logo Image and Brand Text -->
         <a href="<?php echo $base_url; ?>/" class="navbar-logo" aria-label="Accueil Institut CP">
-            <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img">
-            <span class="logo-text navbar-logo-text">Institut <span class="accent">CP</span></span>
+            <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img notranslate" translate="no">
+            <span class="logo-text navbar-logo-text notranslate" translate="no">Institut <span class="accent">CP</span></span>
         </a>
 
         <!-- Navigation Links -->
@@ -57,7 +57,7 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
                     Espace membres
                 </a>
             </li>
-            <li class="lang-switcher-li">
+            <li class="lang-switcher-li notranslate" translate="no">
                 <div class="lang-switcher">
                     <button type="button" class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Choisir la langue">
                         <span class="lang-flag" id="currentLangFlag">🇫🇷</span>
@@ -75,9 +75,21 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
                             <span class="lang-flag">🇬🇧</span>
                             <span>English</span>
                         </button>
+                        <button type="button" class="lang-item" data-lang="es" data-flag="🇪🇸" data-code="ES">
+                            <span class="lang-flag">🇪🇸</span>
+                            <span>Español</span>
+                        </button>
                         <button type="button" class="lang-item" data-lang="zh-CN" data-flag="🇨🇳" data-code="ZH">
                             <span class="lang-flag">🇨🇳</span>
                             <span>中文</span>
+                        </button>
+                        <button type="button" class="lang-item" data-lang="de" data-flag="🇩🇪" data-code="DE">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </button>
+                        <button type="button" class="lang-item" data-lang="ar" data-flag="🇦🇪" data-code="AR">
+                            <span class="lang-flag">🇦🇪</span>
+                            <span>العربية</span>
                         </button>
                     </div>
                 </div>
