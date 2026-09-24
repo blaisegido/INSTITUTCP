@@ -32,7 +32,27 @@ h1, h2, h3, h4, h5, h6, .font-gotham {
     letter-spacing: -0.02em;
 }
 
-/* Toroka Bold Font Configuration (Header & Footer Logo) */
+/* Panton Font Configuration (Seductive & Modern Logo Font) */
+@font-face {
+    font-family: 'Panton';
+    src: local('Panton Bold Italic'), local('Panton-BoldItalic'),
+         url('../fonts/panton/Panton-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Mont Blanc Font Configuration */
+@font-face {
+    font-family: 'Mont Blanc';
+    src: local('Mont Blanc Bold Italic'), local('MontBlanc-BoldItalic'),
+         url('../fonts/mont-blanc/MontBlanc-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Toroka Bold Font Configuration */
 @font-face {
     font-family: 'Toroka';
     src: local('Toroka Bold Italic'), local('Toroka-BoldItalic'),
@@ -42,16 +62,7 @@ h1, h2, h3, h4, h5, h6, .font-gotham {
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Toroka';
-    src: local('Toroka Bold'), local('Toroka-Bold'), local('Toroka'),
-         url('../fonts/toroka/Toroka-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Logo Typography Font - Toroka Italic & Capitalized */
+/* Logo Typography Font - Panton Bold Italic */
 .font-logo,
 .logo-text,
 .navbar-logo-text,
@@ -59,7 +70,7 @@ h1, h2, h3, h4, h5, h6, .font-gotham {
 .footer-logo-text,
 .footer-brand .logo-text,
 .footer-brand .footer-logo-text {
-    font-family: 'Toroka', sans-serif !important;
+    font-family: 'Panton', 'Mont Blanc', 'Toroka', sans-serif !important;
     font-style: italic !important;
     font-weight: 700 !important;
     letter-spacing: -0.015em;
@@ -73,7 +84,7 @@ h1, h2, h3, h4, h5, h6, .font-gotham {
 .footer-brand .logo-text span,
 .footer-brand .footer-logo-text span,
 .footer-brand .footer-logo-text .accent {
-    font-family: 'Toroka', sans-serif !important;
+    font-family: 'Panton', 'Mont Blanc', 'Toroka', sans-serif !important;
     font-style: italic !important;
     font-weight: 700 !important;
     text-transform: none !important;

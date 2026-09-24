@@ -315,9 +315,9 @@ body.light-header .site-header .menu-toggle {
 
 .navbar-logo .navbar-logo-text,
 .navbar-logo-text {
-    font-family: 'Toroka', sans-serif !important;
+    font-family: 'Panton', 'Mont Blanc', 'Toroka', sans-serif !important;
     font-style: italic !important;
-    font-size: clamp(2.05rem, 2.75vw, 2.5rem);
+    font-size: clamp(1.95rem, 2.7vw, 2.45rem);
     font-weight: 700;
     letter-spacing: -0.015em;
     text-transform: none !important;
@@ -330,7 +330,7 @@ body.light-header .site-header .menu-toggle {
 .navbar-logo .navbar-logo-text .accent,
 .navbar-logo-text span,
 .navbar-logo-text .accent {
-    font-family: 'Toroka', sans-serif !important;
+    font-family: 'Panton', 'Mont Blanc', 'Toroka', sans-serif !important;
     font-style: italic !important;
     font-size: inherit;
     font-weight: inherit;
@@ -1780,9 +1780,9 @@ body.light-header .site-header .navbar-logo span.accent {
 
 .footer-brand .footer-logo-text,
 .footer-brand .logo-text {
-    font-family: 'Toroka', sans-serif !important;
+    font-family: 'Panton', 'Mont Blanc', 'Toroka', sans-serif !important;
     font-style: italic !important;
-    font-size: clamp(2.4rem, 3.8vw, 3.4rem);
+    font-size: clamp(2.35rem, 3.6vw, 3.2rem);
     font-weight: 700;
     letter-spacing: -0.015em;
     text-transform: none !important;
@@ -1792,7 +1792,7 @@ body.light-header .site-header .navbar-logo span.accent {
 .footer-brand .footer-logo-text span,
 .footer-brand .footer-logo-text .accent,
 .footer-brand .logo-text span {
-    font-family: 'Toroka', sans-serif !important;
+    font-family: 'Panton', 'Mont Blanc', 'Toroka', sans-serif !important;
     font-style: italic !important;
     font-size: inherit;
     font-weight: inherit;
@@ -7734,6 +7734,60 @@ body > .skiptranslate {
 
     .intl-quote-statement {
         padding: 0;
+    }
+}
+
+/* ==========================================================================
+   LISERET FLOTTANT LATÉRAL DROIT : "REJOIGNEZ-NOUS"
+   ========================================================================== */
+.floating-side-ribbon {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 998;
+    background-color: #0284C7;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1.15rem 0.58rem;
+    border-radius: 8px 0 0 8px;
+    box-shadow: -4px 4px 18px rgba(2, 132, 199, 0.32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.floating-side-ribbon:hover {
+    background-color: #0369A1;
+    color: #FFFFFF;
+    transform: translateY(-50%) translateX(-4px);
+    box-shadow: -6px 6px 24px rgba(2, 132, 199, 0.45);
+}
+
+.floating-side-ribbon-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Gotham', 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .floating-side-ribbon {
+        padding: 0.95rem 0.48rem;
+    }
+    
+    .floating-side-ribbon-text {
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
     }
 }
 

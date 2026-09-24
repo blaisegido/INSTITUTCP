@@ -50,6 +50,11 @@
     </div>
 </footer>
 
+<!-- Floating Side Ribbon "Rejoignez-nous" -->
+<a href="<?php echo $base_url; ?>/espace-membres" class="floating-side-ribbon" aria-label="Rejoignez-nous">
+    <span class="floating-side-ribbon-text">Rejoignez-nous</span>
+</a>
+
 <!-- Main JavaScript -->
 <script src="<?php echo $base_url; ?>/assets/js/main.js?v=1.0.7"></script>
 </body>

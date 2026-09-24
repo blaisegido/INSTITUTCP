@@ -35,9 +35,9 @@ $base_url = $protocol . '://' . $host;
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/fonts.css?v=1.0.8">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/fonts.css?v=1.0.9">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/main.css?v=1.2.5">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/main.css?v=1.2.7">
 </head>
 <body class="<?php echo $body_class; ?>">
