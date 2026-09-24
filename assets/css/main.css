@@ -315,11 +315,12 @@ body.light-header .site-header .menu-toggle {
 
 .navbar-logo .navbar-logo-text,
 .navbar-logo-text {
-    font-family: 'Bikeride', sans-serif !important;
-    font-size: clamp(1.75rem, 2.35vw, 2.2rem);
+    font-family: 'Toroka', sans-serif !important;
+    font-style: italic !important;
+    font-size: clamp(2.05rem, 2.75vw, 2.5rem);
     font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: none;
+    letter-spacing: -0.015em;
+    text-transform: none !important;
     line-height: 1;
     color: inherit;
     transition: color var(--transition-fast);
@@ -329,10 +330,12 @@ body.light-header .site-header .menu-toggle {
 .navbar-logo .navbar-logo-text .accent,
 .navbar-logo-text span,
 .navbar-logo-text .accent {
-    font-family: 'Bikeride', sans-serif !important;
+    font-family: 'Toroka', sans-serif !important;
+    font-style: italic !important;
     font-size: inherit;
     font-weight: inherit;
     letter-spacing: inherit;
+    text-transform: none !important;
 }
 
 .site-header .navbar-logo span.accent {
@@ -1777,21 +1780,24 @@ body.light-header .site-header .navbar-logo span.accent {
 
 .footer-brand .footer-logo-text,
 .footer-brand .logo-text {
-    font-family: 'Bikeride', sans-serif !important;
-    font-size: clamp(2.1rem, 3.2vw, 2.85rem);
+    font-family: 'Toroka', sans-serif !important;
+    font-style: italic !important;
+    font-size: clamp(2.4rem, 3.8vw, 3.4rem);
     font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: none;
+    letter-spacing: -0.015em;
+    text-transform: none !important;
     line-height: 1;
 }
 
 .footer-brand .footer-logo-text span,
 .footer-brand .footer-logo-text .accent,
 .footer-brand .logo-text span {
-    font-family: 'Bikeride', sans-serif !important;
+    font-family: 'Toroka', sans-serif !important;
+    font-style: italic !important;
     font-size: inherit;
     font-weight: inherit;
     letter-spacing: inherit;
+    text-transform: none !important;
 }
 
 .footer-brand p {

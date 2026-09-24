@@ -32,33 +32,51 @@ h1, h2, h3, h4, h5, h6, .font-gotham {
     letter-spacing: -0.02em;
 }
 
-/* Logo Typography Font - Cinzel */
-.font-logo, .logo-text {
-    font-family: 'Cinzel', 'Trajan Pro', 'Georgia', serif;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+/* Toroka Bold Font Configuration (Header & Footer Logo) */
+@font-face {
+    font-family: 'Toroka';
+    src: local('Toroka Bold Italic'), local('Toroka-BoldItalic'),
+         url('../fonts/toroka/Toroka-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 
-/* Bikeride Font Configuration */
 @font-face {
-    font-family: 'Bikeride';
-    src: local('Bikeride'), local('Bikeride Regular'), local('Bikeride-Regular'),
-         url('../fonts/Bikeride.woff2') format('woff2'),
-         url('../fonts/Bikeride.woff') format('woff'),
-         url('../fonts/Bikeride.ttf') format('truetype'),
-         url('../fonts/Bikeride.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'Toroka';
+    src: local('Toroka Bold'), local('Toroka-Bold'), local('Toroka'),
+         url('../fonts/toroka/Toroka-Bold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
+/* Logo Typography Font - Toroka Italic & Capitalized */
+.font-logo,
+.logo-text,
+.navbar-logo-text,
+.navbar-logo .navbar-logo-text,
 .footer-logo-text,
 .footer-brand .logo-text,
+.footer-brand .footer-logo-text {
+    font-family: 'Toroka', sans-serif !important;
+    font-style: italic !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.015em;
+    text-transform: none !important;
+}
+
+.navbar-logo-text span,
+.navbar-logo-text .accent,
 .footer-logo-text span,
+.footer-logo-text .accent,
 .footer-brand .logo-text span,
-.footer-logo-text .accent {
-    font-family: 'Bikeride', sans-serif !important;
-    letter-spacing: 0.03em;
+.footer-brand .footer-logo-text span,
+.footer-brand .footer-logo-text .accent {
+    font-family: 'Toroka', sans-serif !important;
+    font-style: italic !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
 }
 
 /* Body and standard content font */
