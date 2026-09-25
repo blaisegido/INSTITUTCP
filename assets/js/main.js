@@ -560,26 +560,21 @@ function initLanguageSwitcher() {
         return null;
     }
 
-    function updateUI(lang, flag, code) {
-        let flagSrc = flag;
-        let langCode = code;
+    function updateUI(lang) {
+        const activeItem = Array.from(langItems).find(item => item.getAttribute('data-lang') === lang) 
+                        || Array.from(langItems).find(item => item.getAttribute('data-lang') === 'fr') 
+                        || langItems[0];
+        if (!activeItem) return;
 
-        const activeItem = Array.from(langItems).find(item => item.getAttribute('data-lang') === lang);
-        if (activeItem) {
-            if (!flagSrc || !flagSrc.includes('/')) {
-                flagSrc = activeItem.getAttribute('data-flag');
-            }
-            if (!langCode) {
-                langCode = activeItem.getAttribute('data-code');
-            }
-        }
+        const flagSrc = activeItem.getAttribute('data-flag');
+        const langCode = activeItem.getAttribute('data-code');
 
         if (currentFlag) {
             if (currentFlag.tagName === 'IMG' && flagSrc) {
                 currentFlag.src = flagSrc;
                 currentFlag.alt = langCode || lang;
-            } else if (flag) {
-                currentFlag.textContent = flag;
+            } else if (flagSrc) {
+                currentFlag.textContent = flagSrc;
             }
         }
 
@@ -588,7 +583,7 @@ function initLanguageSwitcher() {
         }
 
         langItems.forEach(item => {
-            if (item.getAttribute('data-lang') === lang) {
+            if (item === activeItem) {
                 item.classList.add('active');
             } else {
                 item.classList.remove('active');
@@ -603,6 +598,7 @@ function initLanguageSwitcher() {
         document.cookie = `googtrans=; expires=${pastDate}; path=/;`;
         document.cookie = `googtrans=; expires=${pastDate}; path=/; max-age=0;`;
         document.cookie = `googtrans=; expires=${pastDate};`;
+        document.cookie = `user_icp_flag=; expires=${pastDate}; path=/;`;
         
         const hostParts = hostname.split('.');
         for (let i = 0; i < hostParts.length; i++) {
@@ -619,7 +615,7 @@ function initLanguageSwitcher() {
         document.cookie = `user_icp_code=FR; path=/; max-age=31536000`;
     }
 
-    function setTranslationCookies(lang, flag, code) {
+    function setTranslationCookies(lang) {
         const domain = window.location.hostname;
         const rootDomain = domain.includes('.') ? '.' + domain.split('.').slice(-2).join('.') : '';
         
@@ -631,8 +627,6 @@ function initLanguageSwitcher() {
             document.cookie = `googtrans=${googVal}; path=/; domain=${domain};`;
             if (rootDomain) document.cookie = `googtrans=${googVal}; path=/; domain=${rootDomain};`;
             document.cookie = `user_icp_lang=${lang}; path=/; max-age=31536000`;
-            document.cookie = `user_icp_flag=${flag}; path=/; max-age=31536000`;
-            document.cookie = `user_icp_code=${code}; path=/; max-age=31536000`;
         }
     }
 
@@ -648,8 +642,8 @@ function initLanguageSwitcher() {
         return false;
     }
 
-    window.setLanguage = function(lang, flag, code) {
-        updateUI(lang, flag, code);
+    window.setLanguage = function(lang) {
+        updateUI(lang);
 
         if (lang === 'fr') {
             clearAllGoogTransCookies();
@@ -673,7 +667,7 @@ function initLanguageSwitcher() {
         }
 
         // For all other languages: live instant translate
-        setTranslationCookies(lang, flag, code);
+        setTranslationCookies(lang);
 
         if (!triggerGoogleTranslateCombo(lang)) {
             let count = 0;
@@ -690,18 +684,14 @@ function initLanguageSwitcher() {
         item.addEventListener('click', (e) => {
             e.preventDefault();
             const lang = item.getAttribute('data-lang');
-            const flag = item.getAttribute('data-flag');
-            const code = item.getAttribute('data-code');
-            window.setLanguage(lang, flag, code);
+            window.setLanguage(lang);
             langDropdown.classList.remove('show');
             langBtn.setAttribute('aria-expanded', 'false');
         });
     });
 
     const savedLang = getCookie('user_icp_lang') || 'fr';
-    const savedFlag = getCookie('user_icp_flag') || '🇫🇷';
-    const savedCode = getCookie('user_icp_code') || 'FR';
-    updateUI(savedLang, savedFlag, savedCode);
+    updateUI(savedLang);
 
     if (savedLang === 'fr') {
         const rawGoog = getCookie('googtrans');

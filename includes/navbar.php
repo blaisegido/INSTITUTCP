@@ -49,7 +49,7 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
                     ICP International
                 </a>
             </li>
-            <li>
+            <li class="mobile-member-li">
                 <a href="<?php echo $base_url; ?>/espace-membres" class="btn-member">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
@@ -57,51 +57,61 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
                     Espace membres
                 </a>
             </li>
-            <li class="lang-switcher-li notranslate" translate="no">
-                <div class="lang-switcher">
-                    <button type="button" class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Choisir la langue">
-                        <img src="<?php echo $base_url; ?>/assets/img/flags/fr.svg" alt="FR" class="lang-flag-img" id="currentLangFlag" width="20" height="14">
-                        <span class="lang-code" id="currentLangCode">FR</span>
-                        <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <path d="M6 9l6 6 6-6"/>
-                        </svg>
-                    </button>
-                    <div class="lang-dropdown" id="langDropdown">
-                        <button type="button" class="lang-item active" data-lang="fr" data-flag="<?php echo $base_url; ?>/assets/img/flags/fr.svg" data-code="FR">
-                            <img src="<?php echo $base_url; ?>/assets/img/flags/fr.svg" alt="FR" class="lang-flag-img" width="20" height="14">
-                            <span>Français</span>
-                        </button>
-                        <button type="button" class="lang-item" data-lang="en" data-flag="<?php echo $base_url; ?>/assets/img/flags/gb.svg" data-code="EN">
-                            <img src="<?php echo $base_url; ?>/assets/img/flags/gb.svg" alt="EN" class="lang-flag-img" width="20" height="14">
-                            <span>English</span>
-                        </button>
-                        <button type="button" class="lang-item" data-lang="es" data-flag="<?php echo $base_url; ?>/assets/img/flags/es.svg" data-code="ES">
-                            <img src="<?php echo $base_url; ?>/assets/img/flags/es.svg" alt="ES" class="lang-flag-img" width="20" height="14">
-                            <span>Español</span>
-                        </button>
-                        <button type="button" class="lang-item" data-lang="zh-CN" data-flag="<?php echo $base_url; ?>/assets/img/flags/cn.svg" data-code="ZH">
-                            <img src="<?php echo $base_url; ?>/assets/img/flags/cn.svg" alt="ZH" class="lang-flag-img" width="20" height="14">
-                            <span>中文</span>
-                        </button>
-                        <button type="button" class="lang-item" data-lang="de" data-flag="<?php echo $base_url; ?>/assets/img/flags/de.svg" data-code="DE">
-                            <img src="<?php echo $base_url; ?>/assets/img/flags/de.svg" alt="DE" class="lang-flag-img" width="20" height="14">
-                            <span>Deutsch</span>
-                        </button>
-                        <button type="button" class="lang-item" data-lang="ar" data-flag="<?php echo $base_url; ?>/assets/img/flags/ae.svg" data-code="AR">
-                            <img src="<?php echo $base_url; ?>/assets/img/flags/ae.svg" alt="AR" class="lang-flag-img" width="20" height="14">
-                            <span>العربية</span>
-                        </button>
-                    </div>
-                </div>
-            </li>
         </ul>
 
-        <!-- Mobile Toggle Button -->
-        <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
+        <!-- Right Side Header Actions (Desktop member button + Language switcher + Mobile menu toggle) -->
+        <div class="navbar-actions">
+            <a href="<?php echo $base_url; ?>/espace-membres" class="btn-member desktop-member-btn">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+                Espace membres
+            </a>
+
+            <!-- Language Switcher Widget (Visible on both Desktop and Mobile next to burger) -->
+            <div class="lang-switcher notranslate" translate="no">
+                <button type="button" class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Choisir la langue">
+                    <img src="<?php echo $base_url; ?>/assets/img/flags/fr.svg" alt="FR" class="lang-flag-img" id="currentLangFlag" width="20" height="14">
+                    <span class="lang-code" id="currentLangCode">FR</span>
+                    <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button type="button" class="lang-item active" data-lang="fr" data-flag="<?php echo $base_url; ?>/assets/img/flags/fr.svg" data-code="FR">
+                        <img src="<?php echo $base_url; ?>/assets/img/flags/fr.svg" alt="FR" class="lang-flag-img" width="20" height="14">
+                        <span>Français</span>
+                    </button>
+                    <button type="button" class="lang-item" data-lang="en" data-flag="<?php echo $base_url; ?>/assets/img/flags/gb.svg" data-code="EN">
+                        <img src="<?php echo $base_url; ?>/assets/img/flags/gb.svg" alt="EN" class="lang-flag-img" width="20" height="14">
+                        <span>English</span>
+                    </button>
+                    <button type="button" class="lang-item" data-lang="es" data-flag="<?php echo $base_url; ?>/assets/img/flags/es.svg" data-code="ES">
+                        <img src="<?php echo $base_url; ?>/assets/img/flags/es.svg" alt="ES" class="lang-flag-img" width="20" height="14">
+                        <span>Español</span>
+                    </button>
+                    <button type="button" class="lang-item" data-lang="zh-CN" data-flag="<?php echo $base_url; ?>/assets/img/flags/cn.svg" data-code="ZH">
+                        <img src="<?php echo $base_url; ?>/assets/img/flags/cn.svg" alt="ZH" class="lang-flag-img" width="20" height="14">
+                        <span>中文</span>
+                    </button>
+                    <button type="button" class="lang-item" data-lang="de" data-flag="<?php echo $base_url; ?>/assets/img/flags/de.svg" data-code="DE">
+                        <img src="<?php echo $base_url; ?>/assets/img/flags/de.svg" alt="DE" class="lang-flag-img" width="20" height="14">
+                        <span>Deutsch</span>
+                    </button>
+                    <button type="button" class="lang-item" data-lang="ar" data-flag="<?php echo $base_url; ?>/assets/img/flags/ae.svg" data-code="AR">
+                        <img src="<?php echo $base_url; ?>/assets/img/flags/ae.svg" alt="AR" class="lang-flag-img" width="20" height="14">
+                        <span>العربية</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Toggle Button -->
+            <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
     </div>
 </header>
 <div id="google_translate_element" style="display:none;"></div>
