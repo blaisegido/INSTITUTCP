@@ -5,11 +5,11 @@ require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
 
-<!-- HERO SECTION (FULLSCREEN 100VH WITH VIDEO BACKGROUND) -->
+<!-- HERO SECTION (FULLSCREEN 100VH WITH MEETING ROOM BACKGROUND IMAGE) -->
 <section class="hero-section">
-    <!-- YouTube Video Background Container -->
-    <div class="hero-video-wrapper">
-        <div id="youtube-hero-player"></div>
+    <!-- Hero Background Image Container -->
+    <div class="hero-bg-wrapper">
+        <img src="<?php echo $base_url; ?>/assets/img/home/hero_meeting_room.jpg" alt="Institut CP - Salle de réunion et gouvernance" class="hero-bg-img">
     </div>
 
     <!-- Dark Overlay Layer -->
@@ -35,13 +35,13 @@ require_once __DIR__ . '/includes/navbar.php';
         </p>
 
         <div class="hero-cta-group">
-            <a href="espace-membres.php" class="btn btn-primary">
+            <a href="<?php echo $base_url; ?>/espace-membres" class="btn btn-primary">
                 Nous rejoindre
                 <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
             </a>
-            <a href="services.php" class="btn btn-secondary">
+            <a href="<?php echo $base_url; ?>/services" class="btn btn-secondary">
                 Nos expertises
             </a>
         </div>
@@ -90,7 +90,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <!-- Sleek Centered Play Button Overlay -->
                     <div class="video-play-overlay">
                         <div class="big-play-btn" title="Lire la vidéo">
-                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M8 5v14l11-7z"/>
                             </svg>
                         </div>
