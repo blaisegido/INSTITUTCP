@@ -30,7 +30,7 @@ require_once __DIR__ . '/includes/navbar.php';
 
                 <figure class="services-cover-figure">
                     <div class="services-cover-image-shell">
-                        <img src="<?php echo $base_url; ?>/assets/img/home/plans.webp" alt="Plans de construction, outils de mesure et clés posés sur une table de travail">
+                        <img src="<?php echo $base_url; ?>/assets/img/home/plans.webp" alt="Plans de construction, outils de mesure et clés posés sur une table de travail" width="900" height="600" loading="lazy" decoding="async">
                         <span class="services-cover-tag">Le plan de réponse ICP</span>
                         <div class="services-plan-mark" aria-hidden="true">
                             <span></span>

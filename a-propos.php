@@ -30,7 +30,7 @@ require_once __DIR__ . '/includes/navbar.php';
 
                 <figure class="about-cover-figure">
                     <div class="about-cover-image-shell">
-                        <img src="<?php echo $base_url; ?>/assets/img/home/salle_de_reunion.webp" alt="Des professionnels r&eacute;unis autour d&rsquo;une table de travail">
+                        <img src="<?php echo $base_url; ?>/assets/img/home/salle_de_reunion.webp" alt="Des professionnels r&eacute;unis autour d&rsquo;une table de travail" width="900" height="600" loading="lazy" decoding="async">
                     </div>
                 </figure>
             </div>

@@ -19,7 +19,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <h1 id="international-title">Ouvrir de nouvelles<br>perspectives pour la<br>construction fran&ccedil;aise</h1>
                 </div>
                 <figure class="international-hero-visual">
-                    <img src="<?php echo $base_url; ?>/assets/img/international/international-hero.webp" alt="Fa&ccedil;ade d'un immeuble contemporain">
+                    <img src="<?php echo $base_url; ?>/assets/img/international/international-hero.webp" alt="Fa&ccedil;ade d'un immeuble contemporain" width="1200" height="800" fetchpriority="high" decoding="async">
                 </figure>
             </div>
         </div>
@@ -97,7 +97,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="intl-split-media">
                     <figure class="intl-media-frame">
                         <div class="intl-img-wrap">
-                            <img src="<?php echo $base_url; ?>/assets/img/international/international-detail.webp" alt="Structure et d&eacute;tails d'une construction" width="690" height="460" loading="lazy">
+                            <img src="<?php echo $base_url; ?>/assets/img/international/international-detail.webp" alt="Structure et d&eacute;tails d'une construction" width="900" height="507" loading="lazy" decoding="async">
                         </div>
                         <figcaption class="intl-media-caption">
                             <span class="intl-caption-icon">&#9670;</span>
@@ -206,7 +206,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="intl-split-media">
                     <figure class="intl-media-frame">
                         <div class="intl-img-wrap">
-                            <img src="<?php echo $base_url; ?>/assets/img/international/international-meeting.webp" alt="Professionnels r&eacute;unis autour d'un projet" width="620" height="420" loading="lazy">
+                            <img src="<?php echo $base_url; ?>/assets/img/international/international-meeting.webp" alt="Professionnels r&eacute;unis autour d'un projet" width="600" height="900" loading="lazy" decoding="async">
                         </div>
                         <figcaption class="intl-media-caption">
                             <span class="intl-caption-icon">&#9670;</span>
@@ -267,7 +267,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- VISUEL DE CLÔTURE HORIZON -->
             <figure class="intl-future-visual">
                 <div class="intl-img-wrap">
-                    <img src="<?php echo $base_url; ?>/assets/img/international/international-future.webp" alt="Espace de travail contemporain ouvert sur la ville" width="1160" height="520" loading="lazy">
+                    <img src="<?php echo $base_url; ?>/assets/img/international/international-future.webp" alt="Espace de travail contemporain ouvert sur la ville" width="899" height="600" loading="lazy" decoding="async">
                 </div>
                 <figcaption class="intl-media-caption intl-media-caption--center">
                     <span class="intl-caption-icon">&#9670;</span>

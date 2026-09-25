@@ -28,7 +28,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <figure class="formations-certification">
                     <div class="formations-certification-card">
                         <span class="formations-certification-label">La qualité en action</span>
-                        <img src="<?php echo $base_url; ?>/assets/img/formations/certification-qualiopi.png" alt="Certification Qualiopi, processus certifié par la République Française" width="317" height="169">
+                        <img src="<?php echo $base_url; ?>/assets/img/formations/certification-qualiopi.png" alt="Certification Qualiopi, processus certifié par la République Française" width="317" height="169" loading="lazy" decoding="async">
                         <span class="formations-certification-stamp" aria-hidden="true">ICP</span>
                     </div>
                 </figure>

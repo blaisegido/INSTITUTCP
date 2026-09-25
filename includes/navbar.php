@@ -18,7 +18,7 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
     <div class="navbar-container">
         <!-- Logo Image and Brand Text -->
         <a href="<?php echo $base_url; ?>/" class="navbar-logo" aria-label="Accueil Institut CP">
-            <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img notranslate" translate="no">
+            <img src="<?php echo $base_url; ?>/assets/img/logos/logo_modif_blanc_102_1-100x100.webp" alt="INSTITUT CP Logo" class="logo-img notranslate" width="100" height="100" decoding="async" translate="no">
             <span class="logo-text navbar-logo-text notranslate" translate="no">Institut <span class="accent">CP</span></span>
         </a>
 

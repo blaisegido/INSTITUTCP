@@ -9,7 +9,7 @@ require_once __DIR__ . '/includes/navbar.php';
 <section class="hero-section">
     <!-- Hero Background Image Container -->
     <div class="hero-bg-wrapper">
-        <img src="<?php echo $base_url; ?>/assets/img/home/hero_meeting_room.jpg" alt="Institut CP - Salle de réunion et gouvernance" class="hero-bg-img">
+        <img src="<?php echo $base_url; ?>/assets/img/home/hero_meeting_room.webp" alt="Institut CP - Salle de réunion et gouvernance" class="hero-bg-img" width="1620" height="1080" fetchpriority="high" decoding="async">
     </div>
 
     <!-- Dark Overlay Layer -->
@@ -228,7 +228,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <!-- Slide 1: Le marché de la construction neuve -->
                     <article class="nextgen-card" role="group" aria-roledescription="slide" aria-label="1 sur 3">
                         <div class="nextgen-card-media">
-                            <img src="assets/img/home/carrousel_1.webp" alt="Le marché de la construction neuve" loading="lazy">
+                            <img src="assets/img/home/carrousel_1.webp" alt="Le marché de la construction neuve" width="800" height="545" loading="lazy" decoding="async">
                             <div class="nextgen-card-overlay"></div>
                             <span class="nextgen-number" aria-hidden="true">01 <small>/ 03</small></span>
                         </div>
@@ -252,7 +252,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <!-- Slide 2: Les mesures phares de la loi ELAN -->
                     <article class="nextgen-card" role="group" aria-roledescription="slide" aria-label="2 sur 3">
                         <div class="nextgen-card-media">
-                            <img src="assets/img/home/carrousel_2.webp" alt="Les mesures phares de la loi ELAN" loading="lazy">
+                            <img src="assets/img/home/carrousel_2.webp" alt="Les mesures phares de la loi ELAN" width="800" height="533" loading="lazy" decoding="async">
                             <div class="nextgen-card-overlay"></div>
                             <span class="nextgen-number" aria-hidden="true">02 <small>/ 03</small></span>
                         </div>
@@ -276,7 +276,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <!-- Slide 3: LE BAROMÈTRE DE L'IMMOBILIER NEUF -->
                     <article class="nextgen-card" role="group" aria-roledescription="slide" aria-label="3 sur 3">
                         <div class="nextgen-card-media">
-                            <img src="assets/img/home/carrousel_3.webp" alt="LE BAROMÈTRE DE L'IMMOBILIER NEUF" loading="lazy">
+                            <img src="assets/img/home/carrousel_3.webp" alt="LE BAROMÈTRE DE L'IMMOBILIER NEUF" width="800" height="533" loading="lazy" decoding="async">
                             <div class="nextgen-card-overlay"></div>
                             <span class="nextgen-number" aria-hidden="true">03 <small>/ 03</small></span>
                         </div>
@@ -349,7 +349,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 1: Livres publiés -->
             <article class="pub-encart">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_livres.webp" alt="Livres publiés" class="pub-encart-img" loading="lazy">
+                    <img src="assets/img/home/pub_livres.webp" alt="Livres publiés" class="pub-encart-img" width="600" height="600" loading="lazy" decoding="async">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">01</span>
                 </div>
@@ -367,7 +367,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 2: Fiches d'infos pro -->
             <article class="pub-encart">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_fiches.webp" alt="Fiches d'infos pro" class="pub-encart-img" loading="lazy">
+                    <img src="assets/img/home/pub_fiches.webp" alt="Fiches d'infos pro" class="pub-encart-img" width="600" height="600" loading="lazy" decoding="async">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">02</span>
                 </div>
@@ -385,7 +385,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 3: Guide Solutions Habitat -->
             <article class="pub-encart">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_guide.webp" alt="Guide Solutions Habitat" class="pub-encart-img" loading="lazy">
+                    <img src="assets/img/home/pub_guide.webp" alt="Guide Solutions Habitat" class="pub-encart-img" width="600" height="600" loading="lazy" decoding="async">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">03</span>
                 </div>
@@ -403,7 +403,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <!-- Encart 4: Presse -->
             <article class="pub-encart pub-encart--dark">
                 <div class="pub-encart-img-wrap">
-                    <img src="assets/img/home/pub_presse.webp" alt="Presse" class="pub-encart-img" loading="lazy">
+                    <img src="assets/img/home/pub_presse.webp" alt="Presse" class="pub-encart-img" width="600" height="600" loading="lazy" decoding="async">
                     <div class="pub-encart-img-overlay"></div>
                     <span class="pub-encart-num-badge">04</span>
                 </div>
@@ -624,7 +624,7 @@ require_once __DIR__ . '/includes/navbar.php';
         <!-- Partner Banner GRDF / Livre Blanc RE2020 -->
         <div class="testi-banner-wrap reveal-on-scroll">
             <a href="https://www.grdf.fr/entreprises/gaz-recevez-le-guide-re2020?utm_source=site&utm_medium=banniere&utm_campaign=icp" target="_blank" rel="noopener noreferrer" class="testi-partner-banner" title="Découvrez notre livre blanc RE2020 — GRDF">
-                <img src="assets/img/home/LIVRES_BLANCS.webp" alt="GRDF — Comment construire bas carbone ? Découvrez notre livre blanc RE2020" class="testi-partner-banner-img" loading="lazy">
+                <img src="assets/img/home/LIVRES_BLANCS.webp" alt="GRDF — Comment construire bas carbone ? Découvrez notre livre blanc RE2020" class="testi-partner-banner-img" width="970" height="250" loading="lazy" decoding="async">
             </a>
         </div>
 
