@@ -7850,6 +7850,17 @@ body > .skiptranslate {
    RESPONSIVE DESIGN (TABLETTES ET MOBILES)
    ======================================================================== */
 @media (max-width: 992px) {
+    .international-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .international-hero-visual {
+        margin: 1.5rem auto 0;
+        max-width: 480px;
+        width: 100%;
+    }
+
     .intl-manifesto-grid,
     .intl-split-grid,
     .intl-split-grid--reverse,
@@ -7892,16 +7903,22 @@ body > .skiptranslate {
 
 @media (max-width: 700px) {
     .international-hero {
-        padding-bottom: 3.25rem;
+        padding: calc(var(--navbar-height) + 1.5rem) 0 3.5rem;
+    }
+
+    .international-breadcrumb {
+        margin-bottom: 1.5rem;
     }
 
     .international-hero h1 {
-        font-size: clamp(2.1rem, 10vw, 3.2rem);
+        font-size: clamp(2.1rem, 9.5vw, 3.2rem);
     }
 
     .international-hero-visual {
-        margin: 2.5rem auto -3rem 0;
-        max-width: 280px;
+        margin: 1.75rem auto 0;
+        max-width: 100%;
+        width: 100%;
+        box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.18);
     }
 
     .intl-criteria-grid {
