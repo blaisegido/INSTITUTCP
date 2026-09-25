@@ -1,10 +1,9 @@
-/* Google Fonts - DM Sans & Cinzel (Logo Branding Font) */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* Google Fonts is loaded via preconnect link in header.php for high performance */
 
 /* Gotham Font Configuration (Local / Fallback System Stack) */
 @font-face {
     font-family: 'Gotham';
-    src: local('Gotham Bold'), local('Gotham-Bold'), url('../fonts/Gotham-Bold.woff2') format('woff2');
+    src: local('Gotham Bold'), local('Gotham-Bold');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -12,7 +11,7 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: local('Gotham Medium'), local('Gotham-Medium'), url('../fonts/Gotham-Medium.woff2') format('woff2');
+    src: local('Gotham Medium'), local('Gotham-Medium');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -20,7 +19,7 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: local('Gotham Book'), local('Gotham-Book'), url('../fonts/Gotham-Book.woff2') format('woff2');
+    src: local('Gotham Book'), local('Gotham-Book');
     font-weight: 400;
     font-style: normal;
     font-display: swap;

@@ -34,10 +34,24 @@ $base_url = $protocol . '://' . $host;
     <meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>">
     <meta property="og:type" content="website">
 
+    <!-- DNS Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts Non-blocking -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap">
+
+    <!-- Preload Critical LCP Hero Image -->
+    <?php if ($is_home): ?>
+    <link rel="preload" as="image" href="<?php echo $base_url; ?>/assets/img/home/hero_meeting_room.webp" type="image/webp" fetchpriority="high">
+    <?php elseif ($request_uri === 'international' || $request_uri === 'international.php'): ?>
+    <link rel="preload" as="image" href="<?php echo $base_url; ?>/assets/img/international/international-hero.webp" type="image/webp" fetchpriority="high">
+    <?php endif; ?>
+
     <!-- Fonts -->
-    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/fonts.css?v=1.0.9">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/fonts.css?v=1.1.0">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/main.css?v=1.3.6">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/main.css?v=1.3.7">
 </head>
 <body class="<?php echo $body_class; ?>">

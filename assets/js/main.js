@@ -667,6 +667,9 @@ function initLanguageSwitcher() {
         }
 
         // For all other languages: live instant translate
+        if (window.ensureGoogleTranslateLoaded) {
+            window.ensureGoogleTranslateLoaded();
+        }
         setTranslationCookies(lang);
 
         if (!triggerGoogleTranslateCombo(lang)) {
@@ -733,7 +736,7 @@ function initLanguageSwitcher() {
     }
 })();
 
-// Load Google Translate API dynamically & early
+// Load Google Translate API dynamically & with zero render-blocking
 (function loadGoogleTranslate() {
     window.googleTranslateElementInit = function() {
         if (window.google && window.google.translate) {
@@ -746,11 +749,34 @@ function initLanguageSwitcher() {
         }
     };
 
-    if (!document.getElementById('google-translate-script')) {
-        const script = document.createElement('script');
-        script.id = 'google-translate-script';
-        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-        script.async = true;
-        document.head.appendChild(script);
+    window.ensureGoogleTranslateLoaded = function() {
+        if (!document.getElementById('google-translate-script')) {
+            const script = document.createElement('script');
+            script.id = 'google-translate-script';
+            script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+            script.async = true;
+            document.head.appendChild(script);
+        }
+    };
+
+    const savedLang = (function() {
+        const match = document.cookie.match(/(^|;)\s*user_icp_lang=([^;]+)/);
+        return match ? match[2] : 'fr';
+    })();
+
+    if (savedLang !== 'fr') {
+        window.ensureGoogleTranslateLoaded();
+    } else {
+        const langBtn = document.getElementById('langSwitcherBtn');
+        if (langBtn) {
+            ['mouseenter', 'focus', 'click', 'touchstart'].forEach(evt => {
+                langBtn.addEventListener(evt, window.ensureGoogleTranslateLoaded, { once: true, passive: true });
+            });
+        }
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(() => setTimeout(window.ensureGoogleTranslateLoaded, 3000));
+        } else {
+            setTimeout(window.ensureGoogleTranslateLoaded, 4000);
+        }
     }
 })();

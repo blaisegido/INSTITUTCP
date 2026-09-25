@@ -56,6 +56,6 @@
 </a>
 
 <!-- Main JavaScript -->
-<script src="<?php echo $base_url; ?>/assets/js/main.js?v=1.0.8"></script>
+<script src="<?php echo $base_url; ?>/assets/js/main.js?v=1.0.9" defer></script>
 </body>
 </html>
