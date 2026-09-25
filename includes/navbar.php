@@ -60,35 +60,35 @@ if ($current_uri === 'a-propos' || $current_page === 'a-propos.php' || $current_
             <li class="lang-switcher-li notranslate" translate="no">
                 <div class="lang-switcher">
                     <button type="button" class="lang-btn" id="langBtn" aria-expanded="false" aria-label="Choisir la langue">
-                        <span class="lang-flag" id="currentLangFlag">🇫🇷</span>
+                        <img src="<?php echo $base_url; ?>/assets/img/flags/fr.svg" alt="FR" class="lang-flag-img" id="currentLangFlag" width="20" height="14">
                         <span class="lang-code" id="currentLangCode">FR</span>
                         <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                             <path d="M6 9l6 6 6-6"/>
                         </svg>
                     </button>
                     <div class="lang-dropdown" id="langDropdown">
-                        <button type="button" class="lang-item active" data-lang="fr" data-flag="🇫🇷" data-code="FR">
-                            <span class="lang-flag">🇫🇷</span>
+                        <button type="button" class="lang-item active" data-lang="fr" data-flag="<?php echo $base_url; ?>/assets/img/flags/fr.svg" data-code="FR">
+                            <img src="<?php echo $base_url; ?>/assets/img/flags/fr.svg" alt="FR" class="lang-flag-img" width="20" height="14">
                             <span>Français</span>
                         </button>
-                        <button type="button" class="lang-item" data-lang="en" data-flag="🇬🇧" data-code="EN">
-                            <span class="lang-flag">🇬🇧</span>
+                        <button type="button" class="lang-item" data-lang="en" data-flag="<?php echo $base_url; ?>/assets/img/flags/gb.svg" data-code="EN">
+                            <img src="<?php echo $base_url; ?>/assets/img/flags/gb.svg" alt="EN" class="lang-flag-img" width="20" height="14">
                             <span>English</span>
                         </button>
-                        <button type="button" class="lang-item" data-lang="es" data-flag="🇪🇸" data-code="ES">
-                            <span class="lang-flag">🇪🇸</span>
+                        <button type="button" class="lang-item" data-lang="es" data-flag="<?php echo $base_url; ?>/assets/img/flags/es.svg" data-code="ES">
+                            <img src="<?php echo $base_url; ?>/assets/img/flags/es.svg" alt="ES" class="lang-flag-img" width="20" height="14">
                             <span>Español</span>
                         </button>
-                        <button type="button" class="lang-item" data-lang="zh-CN" data-flag="🇨🇳" data-code="ZH">
-                            <span class="lang-flag">🇨🇳</span>
+                        <button type="button" class="lang-item" data-lang="zh-CN" data-flag="<?php echo $base_url; ?>/assets/img/flags/cn.svg" data-code="ZH">
+                            <img src="<?php echo $base_url; ?>/assets/img/flags/cn.svg" alt="ZH" class="lang-flag-img" width="20" height="14">
                             <span>中文</span>
                         </button>
-                        <button type="button" class="lang-item" data-lang="de" data-flag="🇩🇪" data-code="DE">
-                            <span class="lang-flag">🇩🇪</span>
+                        <button type="button" class="lang-item" data-lang="de" data-flag="<?php echo $base_url; ?>/assets/img/flags/de.svg" data-code="DE">
+                            <img src="<?php echo $base_url; ?>/assets/img/flags/de.svg" alt="DE" class="lang-flag-img" width="20" height="14">
                             <span>Deutsch</span>
                         </button>
-                        <button type="button" class="lang-item" data-lang="ar" data-flag="🇦🇪" data-code="AR">
-                            <span class="lang-flag">🇦🇪</span>
+                        <button type="button" class="lang-item" data-lang="ar" data-flag="<?php echo $base_url; ?>/assets/img/flags/ae.svg" data-code="AR">
+                            <img src="<?php echo $base_url; ?>/assets/img/flags/ae.svg" alt="AR" class="lang-flag-img" width="20" height="14">
                             <span>العربية</span>
                         </button>
                     </div>

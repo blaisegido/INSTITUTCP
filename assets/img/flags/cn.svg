@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#de2910"/>
+  <!-- Big Star -->
+  <polygon fill="#ffde00" points="150,60 179,151 102,95 198,95 121,151"/>
+  <!-- 4 Small Stars -->
+  <polygon fill="#ffde00" points="300,40 307,63 289,47 311,47 293,63"/>
+  <polygon fill="#ffde00" points="360,100 367,123 349,107 371,107 353,123"/>
+  <polygon fill="#ffde00" points="360,180 367,203 349,187 371,187 353,203"/>
+  <polygon fill="#ffde00" points="300,240 307,263 289,247 311,247 293,263"/>
+</svg>

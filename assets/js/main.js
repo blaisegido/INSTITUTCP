@@ -561,8 +561,32 @@ function initLanguageSwitcher() {
     }
 
     function updateUI(lang, flag, code) {
-        if (currentFlag && flag) currentFlag.textContent = flag;
-        if (currentCode && code) currentCode.textContent = code;
+        let flagSrc = flag;
+        let langCode = code;
+
+        const activeItem = Array.from(langItems).find(item => item.getAttribute('data-lang') === lang);
+        if (activeItem) {
+            if (!flagSrc || !flagSrc.includes('/')) {
+                flagSrc = activeItem.getAttribute('data-flag');
+            }
+            if (!langCode) {
+                langCode = activeItem.getAttribute('data-code');
+            }
+        }
+
+        if (currentFlag) {
+            if (currentFlag.tagName === 'IMG' && flagSrc) {
+                currentFlag.src = flagSrc;
+                currentFlag.alt = langCode || lang;
+            } else if (flag) {
+                currentFlag.textContent = flag;
+            }
+        }
+
+        if (currentCode && langCode) {
+            currentCode.textContent = langCode;
+        }
+
         langItems.forEach(item => {
             if (item.getAttribute('data-lang') === lang) {
                 item.classList.add('active');
@@ -592,7 +616,6 @@ function initLanguageSwitcher() {
         }
         
         document.cookie = `user_icp_lang=fr; path=/; max-age=31536000`;
-        document.cookie = `user_icp_flag=🇫🇷; path=/; max-age=31536000`;
         document.cookie = `user_icp_code=FR; path=/; max-age=31536000`;
     }
 
